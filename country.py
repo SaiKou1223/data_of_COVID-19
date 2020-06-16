@@ -3,7 +3,7 @@ import json,time,requests,sys,csv
 csv_file = open('C:\\Users\\LENOVO\Desktop\\ggyq.csv','w',newline='',encoding='utf-8')
 # 各国疫情
 writer = csv.writer(csv_file)
-writer.writerow(['国家','日期','累计确诊','累计死亡','累计治愈'])
+writer.writerow(['国家','日期','累计确诊','累计治愈','累计死亡'])
 url = 'https://gwpre.sina.cn/interface/wap_api/feiyan/sinawap_get_area_tree.d.json?'
 params = {
     'callback': 'yan_getdata'
